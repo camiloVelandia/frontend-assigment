@@ -1,12 +1,13 @@
 import React from 'react';
 import {MainTag} from './style'
 
+import Article from '../Article'
 import Aside from '../Aside'
 
 const Main = () => {
   return (
     <MainTag>
-      <article></article>
+      <Article/>
       <Aside/>
     </MainTag>
   );

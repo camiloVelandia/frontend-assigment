@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 /* ------------------------------ Action color ------------------------------ */
   --status-critical-color:#FF4040;
   --status-warning-color:#FFAA15;
-  --status-ok-color:#00C781;
+  --status-ok-color:#65b32e;
   --status-unknown-color:#cccccc;
 /* --------------------------------- shadow --------------------------------- */
   --box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
