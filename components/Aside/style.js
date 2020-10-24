@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const AsideTag = styled.aside`
   height: 100%;
-  width:33%;
-  max-width:500px;
-  min-width:400px;
-  margin-left:20px
+  width: 100%;
+  margin-top:80px;
+   @media (min-width: 992px) {
+  margin-top:0px;
+  max-width: 500px;
+  min-width: 400px;
+  margin-left: 20px;
+  width: 33%;
+  }
 `;
 export const ArticleContainer = styled.div`
   background-color: white;
@@ -14,12 +19,17 @@ export const ArticleContainer = styled.div`
   border-radius:20px;
 `;
 export const Article = styled.article`
-  display:flex;
-  padding:20px;
-  border-bottom:1px solid #c9c9c9;
-  &.last{
-      border-bottom:none;
-    }
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #c9c9c9;
+  &.last {
+    border-bottom: none;
+  }
+  @media (max-width: 431px) {
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center
+  }
 `;
 
 export const MainImage = styled.figure`
@@ -47,20 +57,26 @@ export const MainImage = styled.figure`
 `;
 
 export const Content = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding-left:15px;
-  & h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  & a {
     margin: 0;
     font-size: 14px;
+    text-decoration:none;
+    color:black;
+    font-weight:600
   }
   & small {
     color: #c9c9c9;
-    padding-top:7px;
-    padding-bottom:7px;
-    text-transform:capitalize;
-    border-bottom:1px solid #c9c9c9;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  @media (max-width: 431px) {
+  padding-left:0
   }
 `;
 
@@ -68,7 +84,7 @@ export const Heading = styled.h2`
   margin: 0;
   margin-bottom: 10px;
   color: var(--brand-color);
-    position:relative;
+  position:relative;
   font-size: 18px;
   &::after {
     content: "";
@@ -79,6 +95,7 @@ export const Heading = styled.h2`
     right:0;
     transform:translateY(-50%)
   }
+
 `;
 
 export const Actions = styled.div`

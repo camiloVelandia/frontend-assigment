@@ -20,7 +20,7 @@ const index = () => {
             <span>noticia</span>
           </MainImage>
           <Content>
-            <h3>Lorem ipsum dolor: Volutpat consequat</h3>
+            <a href="">Lorem ipsum dolor: Volutpat consequat</a>
             <small>Por: Lorem ipsum dolor</small>
             <Actions>
               <button>
@@ -41,7 +41,7 @@ const index = () => {
             <span>noticia</span>
           </MainImage>
           <Content>
-            <h3>Lorem ipsum dolor: Volutpat consequat</h3>
+            <a href="">Lorem ipsum dolor: Volutpat consequat</a>
             <small>Por: Lorem ipsum dolor</small>
             <Actions>
               <button>
@@ -62,7 +62,28 @@ const index = () => {
             <span>noticia</span>
           </MainImage>
           <Content>
-            <h3>Lorem ipsum dolor: Volutpat consequat</h3>
+            <a href="">Lorem ipsum dolor: Volutpat consequat</a>
+            <small>Por: Lorem ipsum dolor</small>
+            <Actions>
+              <button>
+                <img src="./estrella.svg" /> 50
+              </button>
+              <button>
+                <img src="./charlar.svg" /> 40
+              </button>
+              <button>
+                <img src="./ver.svg" /> 75
+              </button>
+            </Actions>
+          </Content>
+        </Article>
+        <Article>
+          <MainImage>
+            <img src="./desert.jpg" />
+            <span>noticia</span>
+          </MainImage>
+          <Content>
+            <a href="">Lorem ipsum dolor: Volutpat consequat</a>
             <small>Por: Lorem ipsum dolor</small>
             <Actions>
               <button>
@@ -83,7 +104,7 @@ const index = () => {
             <span>noticia</span>
           </MainImage>
           <Content>
-            <h3>Lorem ipsum dolor: Volutpat consequat</h3>
+            <a href="">Lorem ipsum dolor: Volutpat consequat</a>
             <small>Por: Lorem ipsum dolor</small>
             <Actions>
               <button>
@@ -98,6 +119,7 @@ const index = () => {
             </Actions>
           </Content>
         </Article>
+        
       </ArticleContainer>
     </AsideTag>
   );

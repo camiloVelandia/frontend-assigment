@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const ArticleTag = styled.article`
   height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  @media (min-width: 992px) {
   width: 60%;
-  background-color:white;
-  border-radius:15px;
-  padding:20px;
+  }
 `;
 export const Head = styled.div`
   display: flex;
@@ -17,11 +20,17 @@ export const Head = styled.div`
   & button {
     border: none;
     background-color: var(--status-ok-color);
-    border-top-left-radius:15px;
-    border-bottom-right-radius:15px;
-    color:white;
-    padding:6px 19px;
-    cursor:pointer
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 6px 19px;
+    cursor: pointer;
+    @media (max-width: 431px) {
+      margin-top:20px;
+    }
+  }
+  @media (max-width: 431px) {
+    flex-direction: column;
   }
 `;
 
