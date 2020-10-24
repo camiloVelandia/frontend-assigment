@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const HeaderTag = styled.header`
   background-color: var(--brand-color);
-  color:white;
+  color: white;
+  -webkit-box-shadow: 0px 5px 9px -6px #000000;
+  box-shadow: 0px 5px 9px -6px #000000;
   @media (min-width: 767px) {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
   }
 `;
 export const Logo = styled.figure`
@@ -16,13 +18,16 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   & input[type="text"] {
-    height: 32px;
+    height: 100%;
     border: none;
     color: #c9c9c9;
     border-bottom-right-radius: 15px;
+    width:80%;
+    padding-left:10px;
   }
   & button {
-    height: 35px;
+    box-sizing:content-box;
+    height: 100%;
     display: flex;
     background-color: white;
     border: none;

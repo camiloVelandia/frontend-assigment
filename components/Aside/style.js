@@ -3,15 +3,25 @@ import styled from "styled-components";
 export const AsideTag = styled.aside`
   height: 100%;
   width:33%;
-  
-  
+  max-width:500px;
+  min-width:400px;
+  margin-left:20px
+`;
+export const ArticleContainer = styled.div`
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #c9c9c9;
+  border-radius:20px;
 `;
 export const Article = styled.article`
   display:flex;
-  background-color:white;
   padding:20px;
-  border-bottom:1px solid #c9c9c9
+  border-bottom:1px solid #c9c9c9;
+  &.last{
+      border-bottom:none;
+    }
 `;
+
 export const MainImage = styled.figure`
   position:relative;
   margin:0;
