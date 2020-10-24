@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const FooterTag = styled.footer`
   background-color: var(--brand-color);
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  
   -webkit-box-shadow: 0px -4px 6px -4px #000000;
   box-shadow: 0px -4px 6px -4px #000000;
   @media (min-width: 767px) {
