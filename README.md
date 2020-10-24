@@ -34,3 +34,31 @@ Puntos extras:
 - Unit testing.
 - Linting y Prettier
 - Docker
+
+
+
+### Installing
+
+```
+npm install
+```
+
+### to start the template
+
+execute this command
+
+```
+npm run dev
+```
+
+### Build
+
+execute this command
+
+```
+npm run build
+```
+
+### Live Demo 
+
+https://frontend-assigment.vercel.app
